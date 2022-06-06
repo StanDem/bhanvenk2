@@ -21,10 +21,10 @@ var unityInstance = UnityLoader.instantiate("unityContainer", "Build/bhanvenk2.j
 		  unityI = unityInstance;
 }}
 function vkshare(){
-bridge.send("VKWebAppShare",{});
+vkBridge.send("VKWebAppShare",{});
 }
 function vkinvite(){
-bridge.send("VKWebAppShowInviteBox", {})
+vkBridge.send("VKWebAppShowInviteBox", {})
          .then(data => console.log(data.success))
         .catch(error => console.log(error));
 }
